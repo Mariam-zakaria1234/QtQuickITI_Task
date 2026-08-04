@@ -1,0 +1,42 @@
+import QtQuick
+
+Window {
+    width: 850
+    height: 600
+    visible: true
+    title: qsTr("Hello World")
+
+    Rectangle {
+        width: 500
+        height: 350
+        color: "purple"
+        border.color: "black"
+        anchors.centerIn: parent
+        Column{
+         spacing:20
+         anchors.centerIn:parent
+         Text {
+
+             text: qsTr("Hello World")
+             font.pixelSize:20
+             font.bold: true
+             color:"white"
+         }
+         Text {
+
+             text: qsTr("I am:Mariam")
+             font.pixelSize:10
+         }
+         Text {
+
+             text: qsTr("City:Cairo")
+             font.pixelSize:10
+         }
+         Text {
+
+             text: qsTr("Universtiy:AL Azhar")
+             font.pixelSize:10
+         }
+
+        }
+    }
